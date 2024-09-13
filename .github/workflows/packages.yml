@@ -1,9 +1,9 @@
-name: DOCKER Manual Publish
+name:  Build and publish packages
 
 on:
-  schedule:
-    - cron: '0 0 1 * *'
-  workflow_dispatch:
+  push:
+    branches:
+      - master
 
 env:
   # Use docker.io for Docker Hub if empty
