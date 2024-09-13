@@ -13,7 +13,7 @@ The following parameters are used to configure the plugin:
 ```yaml
 pipeline:
   restore-cache:
-    image: drillster/drone-volume-cache
+    image: curder/drone-volume-cache
     restore: true
     mount:
       - ./node_modules
@@ -27,7 +27,7 @@ pipeline:
       - npm install
 
   rebuild-cache:
-    image: drillster/drone-volume-cache
+    image: curder/drone-volume-cache
     rebuild: true
     mount:
       - ./node_modules
@@ -44,7 +44,7 @@ It is possible to limit the lifetime of cached files and folders.
 ```yaml
 pipeline:
   restore-cache:
-    image: drillster/drone-volume-cache
+    image: curder/drone-volume-cache
     restore: true
     mount:
       - ./node_modules
@@ -64,7 +64,7 @@ If this is not optimal for your specific situation, it is possible to modify the
 ```yaml
 pipeline:
   restore-cache:
-    image: drillster/drone-volume-cache
+    image: curder/drone-volume-cache
     restore: true
     mount:
       - ./node_modules
@@ -91,7 +91,7 @@ pipeline:
       - [...]
       - echo -n "my custom cache key" > .cache_key
   restore-cache:
-    image: drillster/drone-volume-cache
+    image: curder/drone-volume-cache
     restore: true
     mount:
       - ./node_modules
