@@ -53,7 +53,7 @@ jobs:
           context: .
           file: ./Dockerfile
           tags: |
-            ghcr.io/${{ env.IMAGE }}:${{ matrix.tag }}
-            ${{ env.IMAGE }}:${{ matrix.tag }}
-          cache-from: type=registry,ref=ghcr.io/${{ env.IMAGE }}:${{ matrix.tag }}
+            ghcr.io/${{ env.IMAGE_NAME }}:${{ matrix.tag }}
+            ${{ env.IMAGE_NAME }}:${{ matrix.tag }}
+          cache-from: type=registry,ref=ghcr.io/${{ env.IMAGE_NAME }}:${{ matrix.tag }}
           cache-to: type=inline
