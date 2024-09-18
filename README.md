@@ -9,7 +9,7 @@ For more information on how to use the plugin, please take a look at [the docs](
 Build the docker image by running:
 
 ```bash
-docker build --rm=true -t curder/drone-volume-cache .
+docker build --rm=true -t ghcr.io/curder/drone-volume-cache:latest .
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ docker run --rm \
   -v $(pwd):$(pwd) \
   -v /tmp/cache:/cache \
   -w $(pwd) \
-  curder/drone-volume-cache
+  ghcr.io/curder/drone-volume-cache:latest
 ```
 
 ## Mirrors
