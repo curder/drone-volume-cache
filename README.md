@@ -12,6 +12,8 @@ Build the docker image by running:
 docker build --rm=true -t ghcr.io/curder/drone-volume-cache:latest .
 ```
 
+For Apple Silicon or other arm-based CPUs, use the `--platform linux/arm64` option.
+
 ## Usage
 Execute from the working directory:
 
